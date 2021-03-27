@@ -113,7 +113,7 @@ class TestViews(TestCase):
 
         self.assertEqual(1, len(json_res))
         self.assertEqual(amazon_expense.id, json_res[0]["id"])
-        self.assertEqual(expense.amount, json_res[0]["amount"])
-        self.assertEqual(expense.merchant, json_res[0]["merchant"])
-        self.assertEqual(expense.description, json_res[0]["description"])
-        self.assertEqual(expense.category, json_res[0]["category"])
+        self.assertEqual(amazon_expense.amount, json_res[0]["amount"])
+        self.assertEqual(amazon_expense.merchant, json_res[0]["merchant"])
+        self.assertEqual(amazon_expense.description, json_res[0]["description"])
+        self.assertEqual(amazon_expense.category, json_res[0]["category"])
